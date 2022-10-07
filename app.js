@@ -1,3 +1,4 @@
+/*
 const btn = document.querySelector('.btn');
 const audio = document.querySelector('audio');
 const visualizer = document.querySelector('.visualizer');
@@ -38,11 +39,11 @@ const update = () => {
     for (let i = 0; i < bufferLength; i++) {
         let item = dataArray[i];
         item = item > 150 ? item / 1.5 : item * 1.5;
-        elements[i].style.transform = `rotateZ(${i * (360 / bufferLength)}deg) translate(-50%, ${clamp(item, 100, 150)}px)`;
+        elements[i].style.transform = `rotatez(${i * (360 / bufferLength)}deg) translate(-80%, ${clamp(item, 100, 150)}px)`;
     }
 };
 update();
-
+*/
 
 
 //--------------------------------------------------------------
@@ -71,7 +72,7 @@ let updateTimer;
 
 const music_list = [
     {
-        img : 'images/stay.png',
+        img : 'img/001.png',
         name : 'Stay',
         artist : 'The Kid LAROI, Justin Bieber',
         music : 'music/001.mp3'
@@ -80,13 +81,31 @@ const music_list = [
         img : 'images/fallingdown.jpg',
         name : 'Falling Down',
         artist : 'Wid Cards',
-        music : 'music/003.mp3'
+        music : 'music/002.mp3'
     },
     {
         img : 'images/faded.png',
         name : 'Faded',
         artist : 'Alan Walker',
+        music : 'music/003.mp3'
+    },
+    {
+        img : 'images/ratherbe.jpg',
+        name : 'Rather Be',
+        artist : 'Clean Bandit',
+        music : 'music/004.mp3'
+    },
+    {
+        img : 'images/fallingdown.jpg',
+        name : 'Falling Down',
+        artist : 'Wid Cards',
         music : 'music/005.mp3'
+    },
+    {
+        img : 'images/faded.png',
+        name : 'Faded',
+        artist : 'Alan Walker',
+        music : 'music/006.mp3'
     },
     {
         img : 'images/ratherbe.jpg',
@@ -105,7 +124,11 @@ function loadTrack(track_index){
     curr_track.src = music_list[track_index].music;
     curr_track.load();
 
+    // aqui a imagem
+
     track_art.style.backgroundImage = "url(" + music_list[track_index].img + ")";
+
+
     track_name.textContent = music_list[track_index].name;
     track_artist.textContent = music_list[track_index].artist;
     now_playing.textContent = "Playing music " + (track_index + 1) + " of " + music_list.length;
@@ -162,9 +185,6 @@ function playpauseTrack(){
 function playTrack(){
     curr_track.play();
     isPlaying = true;
-
-    document.getElementById("audio").src= `${curr_track.src}`;
-
     track_art.classList.add('rotate');
     wave.classList.add('loader');
     playpause_btn.innerHTML = '<i class="fa fa-pause-circle fa-5x"></i>';
