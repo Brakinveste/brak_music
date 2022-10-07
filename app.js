@@ -163,7 +163,7 @@ function playTrack(){
     curr_track.play();
     isPlaying = true;
 
-    document.getElementById("audio1").src= `${curr_track.src}`;
+    document.getElementById("audio").src= `${curr_track.src}`;
 
     track_art.classList.add('rotate');
     wave.classList.add('loader');
