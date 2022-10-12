@@ -92,7 +92,158 @@ const music_list = [
         name : 'Velho Opalão',
         artist : 'Garagem Bluseira',
         music : './music/006.mp3'
-    }
+    },
+    {
+        img : './img/007.jpg',
+        name : 'Eye Of The Tiger ',
+        artist : 'Survivor ',
+        music : './music/007.mp3'
+    },
+    {
+        img : './img/008.jpg',
+        name : 'Cochise',
+        artist : 'Audio Slave',
+        music : './music/008.mp3'
+    },
+    {
+        img : './img/009.jpg',
+        name : 'Age Of Reason',
+        artist : 'Black Sabbath ',
+        music : './music/009.mp3'
+    },
+    {
+        img : './img/011.jpg',
+        name : 'Born For This ',
+        artist : '? ',
+        music : './music/011.mp3'
+    },
+    {
+        img : './img/012.jpg',
+        name : ' Cry Me A River',
+        artist : 'Von Smith ',
+        music : './music/012.mp3'
+    },
+    {
+        img : './img/010.jpg',
+        name : 'Iron Man ',
+        artist : 'Black Sabbath ',
+        music : './music/010.mp3'
+    },
+    {
+        img : './img/013.jpg',
+        name : ' Dream On ',
+        artist : 'Morgan James  ',
+        music : './music/013.mp3'
+    },
+    {
+        img : './img/014.jpg',
+        name : 'Everywhere I Go ',
+        artist : 'Hollywood_Undead ',
+        music : './music/014.mp3'
+    },
+    {
+        img : './img/015.jpg',
+        name : 'Intergalactic',
+        artist : 'Robyn Adele',
+        music : './music/015.mp3'
+    },
+    {
+        img : './img/016.jpg',
+        name : "Don't Tell Me How To Live",
+        artist : 'Kid Rock  ',
+        music : './music/016.mp3'
+    },
+    {
+        img : './img/018.jpg',
+        name : 'Bad To The Bone ',
+        artist : 'Larkin Poe ',
+        music : './music/018.mp3'
+    },
+    {
+        img : './img/020.jpg',
+        name : 'Watch Me',
+        artist : 'The Phantoms',
+        music : './music/020.mp3'
+    },
+    {
+        img : './img/021.jpg',
+        name : 'I Need You ',
+        artist : 'Lynyrd Skynyrd  ',
+        music : './music/021.mp3'
+    },
+    {
+        img : './img/019.jpg',
+        name : 'Fly Away ',
+        artist : 'Larkin Poe ',
+        music : './music/019.mp3'
+    },
+    {
+        img : './img/022.jpg',
+        name : 'Marcha Imperial ',
+        artist : 'Metallica ',
+        music : './music/022.mp3'
+    },
+    {
+        img : './img/017.jpg',
+        name : ' Johnny B Good',
+        artist : 'Larkin Poe ',
+        music : './music/017.mp3'
+    },
+    {
+        img : './img/023.jpg',
+        name : 'The Sea',
+        artist : 'Morcheeba',
+        music : './music/023.mp3'
+    },
+    {
+        img : './img/024.jpg',
+        name : 'Hellraiser ',
+        artist : 'Ozzy',
+        music : './music/024.mp3'
+    },
+    {
+        img : './img/026.jpg',
+        name : 'The Bomb',
+        artist : 'Pigeon John',
+        music : './music/026.mp3'
+    },
+    {
+        img : './img/025.jpg',
+        name : 'Changes',
+        artist : 'Ozzy & Kelly',
+        music : './music/025.mp3'
+    },
+    {
+        img : './img/027.jpg',
+        name : 'Peter Gunn',
+        artist : "Rock N' Roll Racing",
+        music : './music/027.mp3'
+    },
+    {
+        img : './img/028.jpg',
+        name : 'House of SAMCRO',
+        artist : 'Sons of Anarchy',
+        music : './music/028.mp3'
+    },
+    {
+        img : './img/029.jpg',
+        name : 'Sound of silence',
+        artist : '? ',
+        music : './music/029.mp3'
+    },
+    {
+        img : './img/030.jpg',
+        name : 'Diesel Power',
+        artist : 'The Prodigy',
+        music : './music/030.mp3'
+    },
+        {
+        img : './img/031.jpg',
+        name : 'We Will Rock You',
+        artist : 'Max Raabe',
+        music : './music/031.mp3'
+    },
+    
 ];
 
 loadTrack(track_index);
