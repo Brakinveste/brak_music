@@ -1,14 +1,16 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
 
-
-body{
+*body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     color: whitesmoke;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    
 }
 
 .pic {
@@ -19,38 +21,35 @@ body{
 }
 .player{
     
-    margin-left: 20px;
-    height: 95vh;
+   
+}
+
+.track-art{
+   
+   
+}
+
+.player {
     display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
 }
 .wrapper{
-    border: 1px solid transparent;
+    border: 1px solid rgba(255, 255, 255, 0.365);
     
     border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
 .details{
+    margin-top: 20px;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
 }
-.track-art{
-   
-    height: 600px;
-    width: 800px;
-    
-    background-size: cover;
-    background-position: center;
 
-   
-   
-  
-  
-}
 .now-playing{
     font-size: 1rem;
 }
@@ -88,8 +87,18 @@ body{
     opacity: 1.0;
 }
 .slider_container{
+    height: 70px;
+    width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.slider_container2 {
+    height: 83px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
     align-items: center;
 }
 .seek_slider,
@@ -107,12 +116,12 @@ body{
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    width: 15px;
-    height: 15px;
-    background: white;
+    width: 20px;
+    height: 20px;
+    background: rgb(255, 255, 255);
     border: 3px solid #3774ff;
     cursor: pointer;
-    border-radius: 100%;
+   border-radius: 100%;
 }
 .seek_slider:hover,
 .volume_slider:hover{
@@ -130,7 +139,8 @@ body{
 }
 i.fa-volume-down,
 i.fa-volume-up{
-    padding: 10px;
+    padding: 2px;
+    font-size: 30px;
 }
 i,
 i.fa-play-circle,
@@ -138,6 +148,7 @@ i.fa-pause-circle,
 i.fa-step-forward,
 i.fa-step-backward{
     cursor: pointer;
+
 }
 .randomActive{
     color: black;
@@ -149,48 +160,83 @@ i.fa-step-backward{
     justify-content: center;
     align-items: center;
 }
-.loader .stroke{
-    background: #f1f1f1;
-    height: 150%;
-    width: 10px;
-    border-radius: 50px;
-    margin: 0px 5px;
-    animation: animate 1.4s linear infinite;
-}
+
 
 @media (max-width: 600px) {
  
-    body {
-        margin: auto;
-        display: flex;
+    *body {
+        margin: 0;
+        width: auto;
+        height: auto;
         justify-content: space-between;
-        align-items: center;
+        display: flex;
+        justify-content: center;
         flex-wrap: wrap;
         flex-direction: column-reverse;
     }
     .pic {
-        margin: 10px;
+        margin: 0;
         height: 100%;
         width: 100vw;
         background-size: 100%;
         background-repeat: no-repeat;
     }
 
-    .player {
-    margin: 10px;
-    background-size: 100%;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
+    .slider_container{
+        height: 70px;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
     }
+    
+    .slider_container2 {
+        height: 83px;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .player {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .volume_slider {
+        background: #fe0000;
+        height: 30px;
+        width: 60%;
+    }
+
+    .seek_slider::-webkit-slider-thumb,
+    .volume_slider::-webkit-slider-thumb{
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        width: 50px;
+        height: 50px;
+        background: rgb(0, 0, 0);
+        border: 3px solid #3774ff;
+        cursor: pointer;
+        /* border-radius: 100%; */
+}
+
+    .wrapper {
+        width: 95%;
+        border: 1px solid rgba(255, 255, 255, 0.365);
+        border-radius: 20px;
+        box-shadow: rgb(0 0 0 / 30%) 0px 19px 38px, rgb(0 0 0 / 22%) 0px 15px 12px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    } 
 
     .track-art{
    
-        height: 600px;
-        width: 600px;
+        height: 100vw;
+        width: 100px;
         
        /* background-size: cover;
         background-position: center;
