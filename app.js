@@ -1,5 +1,5 @@
 
-let track_art = document.querySelector('.pic');
+let track_art = document.querySelector('.track-art');
 let track_name = document.querySelector('.track-name');
 let track_artist = document.querySelector('.track-artist');
 
@@ -21,12 +21,7 @@ let isRandom = false;
 let updateTimer;
 
 const music_list = [
-    {
-        img : './img/inicio.jpg',
-        name : 'Avance para começar!',
-        artist : '',
-        music : './music/yoda.mp3'
-    },
+    
     {
         img : './img/aint_no_sunshine-canen.jpg',
         name : 'Aint No Sunshine',
@@ -258,7 +253,7 @@ function loadTrack(track_index){
     // aqui a imagem
 
     track_art.style.backgroundImage = "url(" + music_list[track_index].img + ")";
-
+    //track_art.style.background-size = 'cover';
 
     track_name.textContent = music_list[track_index].name;
     track_artist.textContent = music_list[track_index].artist;
