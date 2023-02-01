@@ -22,8 +22,8 @@ let updateTimer;
 
 const music_list = [
     {
-        img : './img/yoda.jpg',
-        name : 'BRAK MUSIC',
+        img : './img/inicio.jpg',
+        name : 'Avance para começar!',
         artist : '',
         music : './music/yoda.mp3'
     },
