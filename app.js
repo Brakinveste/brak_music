@@ -265,7 +265,7 @@ function loadTrack(track_index){
     random_bg_color();
 }
 
-function random_bg_color(){
+/* function random_bg_color(){
     let hex = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e'];
     let a;
 
@@ -283,7 +283,7 @@ function random_bg_color(){
 
     let gradient = 'linear-gradient(' + angle + ',' + Color1 + ', ' + Color2 + ',' + Color1 + ")";
     document.body.style.background = gradient;
-}
+} */
 function reset(){
     curr_time.textContent = "00:00";
     total_duration.textContent = "00:00";
