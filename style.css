@@ -5,9 +5,10 @@
 
 body {
     background-image: url("./img/back.jpg");
-    background-size: cover;
+    
     background-repeat: no-repeat;
-    background-size: contain;
+    
+    background-size: 100% 100%;
     background-color: currentcolor;
     background-position-x: center;
     height: 100vh;
@@ -73,14 +74,24 @@ body {
 }
 .details{
     width: 90%;
-    
+    height: 70px;
     background-color: rgb(113, 135, 91);
     margin-top: 10px;
     margin-bottom: 10px;
     display: flex;
     align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.track_num_box {
+    font-size: 2rem;
+}
+
+.track_info_box {
+    display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
 }
 
 .slider_container{
