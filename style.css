@@ -73,25 +73,31 @@ body {
 
 }
 .details{
+    border-color: aliceblue;
     width: 90%;
-    height: 70px;
+    height: 100px;
     background-color: rgb(113, 135, 91);
     margin-top: 10px;
     margin-bottom: 10px;
     display: flex;
     align-items: center;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .track_num_box {
+    color: aliceblue;
     font-size: 2rem;
+    font-weight: 700;
+    width: 20%;
+    text-align: center;
 }
 
 .track_info_box {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 80%;
 }
 
 .slider_container{
@@ -123,10 +129,15 @@ body {
 }
 .track-name{
     font-size: 1.5rem;
+    text-align: center;
+    font-weight: 600;
+    
 }
 .track-artist{
+    color: aliceblue;
     margin-top: 5px;
     font-size: 1.5rem;
+    text-align: center;
 }
 .buttons{
     margin-top: 20px;
