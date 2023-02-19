@@ -1,9 +1,13 @@
 * {
     margin: 0;
     box-sizing: border-box;
+    
+    
+    
 }
 
 body {
+    
     background-image: url("./img/back.jpg");
     
     background-repeat: no-repeat;
@@ -86,9 +90,11 @@ body {
 }
 
 .track_num_box {
-    color: aliceblue;
+    letter-spacing: 6px;
+    font-family: 'Irish Grover', cursive;
+    color: rgb(255, 255, 255);
     font-size: 2rem;
-    font-weight: 700;
+    font-weight: 600;
     width: 20%;
     text-align: center;
 }
@@ -128,12 +134,14 @@ body {
     font-size: 1rem;
 }
 .track-name{
+    font-family: 'Black Ops One', cursive;
     font-size: 1.5rem;
     text-align: center;
-    font-weight: 600;
+    
     
 }
 .track-artist{
+    font-family: 'Black Ops One', cursive;
     color: aliceblue;
     margin-top: 5px;
     font-size: 1.5rem;
