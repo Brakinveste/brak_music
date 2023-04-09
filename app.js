@@ -394,6 +394,12 @@ const music_list = [
         name : "Free Bird",
         artist : "Lynyrd Skynyrd",
         music : "./music/Lynyrd Skynyrd - Free Bird.mp3"
+    },
+    {
+        img : "./img/godandguns.jpg",
+        name : "God & Guns",
+        artist : "Lynyrd Skynyrd",
+        music : "./music/Lynyrd Skynyrd - God & Guns.mp3"
     },  
     {
         img : "./img/Lynyrd-Skynyrd-Ineedyou.jpg",
